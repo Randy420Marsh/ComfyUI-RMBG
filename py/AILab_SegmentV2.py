@@ -8,10 +8,10 @@ from torch.hub import download_url_to_file
 
 import folder_paths
 from segment_anything import sam_model_registry, SamPredictor
-from groundingdino.util.slconfig import SLConfig
+from GroundingDINO.groundingdino.util.slconfig import SLConfig
 from groundingdino.models import build_model
-from groundingdino.util.utils import clean_state_dict
-from groundingdino.util import box_ops
+from GroundingDINO.groundingdino.util.utils import clean_state_dict
+from GroundingDINO.groundingdino.util import box_ops
 from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
 
 from AILab_ImageMaskTools import pil2tensor, tensor2pil
